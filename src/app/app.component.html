@@ -3,7 +3,7 @@
     <h1 class="text-center font-bold text-4xl text-white">URL Shortener</h1>
     <div class="bg">
       <div class="flex justify-center space-x-0 pt-6">
-        <input type="url" #url placeholder="  Input the URL" class="url">
+        <input type="url" #url placeholder="  Input the URL" class="url" (keyup.enter)="shortenUrl(url.value)">
         <button (click)="shortenUrl(url.value)" [disabled]="isLoading"
           class="btn {{ isLoading ? 'bg-gray-400' :'bg-black' }} inline-flex">Shorten <img *ngIf="isLoading"
             src="/assets/ring.gif" alt="" srcset="">
