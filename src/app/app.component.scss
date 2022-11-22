@@ -2,11 +2,12 @@
   @apply flex space-x-3 w-full mb-3 items-center;
 }
 .code{
-  @apply font-bold text-lg flex-shrink-0 w-full md:w-36;
+  @apply font-bold text-lg w-full md:w-36;
 }
 .response{
   @apply text-blue-600 underline flex-auto w-full;
 }
+
 .url{
   @apply w-full p-2 ring-[#21253F] outline-none ring-1;
 }

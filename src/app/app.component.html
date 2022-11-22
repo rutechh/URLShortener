@@ -1,5 +1,5 @@
-<section class="bg-[#21253F] w-full h-screen ">
-  <div class="container mx-auto pt-10 ">
+<section class="bg-[#21253F] w-full h-screen overflow-y-scroll fixed pb-32">
+  <div class="container mx-auto pt-10">
     <h1 class="text-center font-bold text-4xl text-white">URL Shortener</h1>
     <div class="bg">
       <div class="flex justify-center space-x-0 pt-6">
@@ -19,68 +19,65 @@
         <div class="txt w-full">
           <p class="code">Code: </p>
           <p class="response relative">
-            <input readonly value="{{ response.result.code }}" class="w-full ring-1 outline-none p-2">
+            <input readonly value="{{ response.result.code }}" class="w-full ring-1 ring-blue-600 outline-none p-2">
             <i (click)="copyText(response.result.code)" class="fa fa-clone cursor-pointer absolute right-5 top-3"
-              aria-hidden="true"></i>
+              aria-hidden="true" title="Copy"></i>
           </p>
         </div>
         <div class="txt">
           <p class="code">Short link: </p>
           <p class="response relative">
-            <input readonly value="{{ response.result.short_link }}" class="w-full ring-1 outline-none p-2">
+            <input readonly value="{{ response.result.short_link }}"
+              class="w-full ring-1 ring-blue-600 outline-none p-2">
             <i (click)="copyText(response.result.short_link)" class="fa fa-clone absolute cursor-pointer right-5 top-3"
-              aria-hidden="true"></i>
+              aria-hidden="true" title="Copy"></i>
           </p>
 
         </div>
         <div class="txt">
           <p class="code">Full short link: </p>
-          <p class="response relative">
-            <input readonly value="{{ response.result.full_short_link }}" class="w-full ring-1 outline-none p-2">
-            <i (click)="copyText(response.result.full_short_link)"
-              class="fa fa-clone absolute cursor-pointer right-5 top-3" aria-hidden="true"></i>
+          <p class="response ">
+            <input readonly value="{{ response.result.full_short_link }}"
+              class="w-full ring-1 ring-blue-600 outline-none p-2">
           </p>
 
         </div>
         <div class="txt">
           <p class="code">Short link two: </p>
-          <p class="response relative">
-            <input readonly value="{{ response.result.short_link2 }}" class="w-full ring-1 outline-none p-2">
-            <i (click)="copyText(response.result.short_link2)" class="fa fa-clone absolute cursor-pointer right-5 top-3"
-              aria-hidden="true"></i>
+          <p class="response">
+            <input readonly value="{{ response.result.short_link2 }}"
+              class="w-full ring-1 ring-blue-600 outline-none p-2">
+
           </p>
         </div>
         <div class="txt">
           <p class="code">Full short link two: </p>
-          <p class="response relative">
-            <input readonly value="{{ response.result.full_short_link2 }}" class="w-full ring-1 outline-none p-2">
-            <i (click)="copyText(response.result.full_short_link2)"
-              class="fa fa-clone absolute cursor-pointer right-5 top-3" aria-hidden="true"></i>
+          <p class="response ">
+            <input readonly value="{{ response.result.full_short_link2 }}"
+              class="w-full ring-1 ring-blue-600 outline-none p-2">
           </p>
         </div>
         <div class="txt">
           <p class="code">Share link: </p>
-          <p class="response relative">
-            <input readonly value="{{ response.result.share_link }}" class="w-full ring-1 outline-none p-2">
-            <i (click)="copyText(response.result.share_link)" class="fa fa-clone absolute cursor-pointer right-5 top-3"
-              aria-hidden="true"></i>
+          <p class="response ">
+            <input readonly value="{{ response.result.share_link }}"
+              class="w-full ring-1 ring-blue-600 outline-none p-2">
+
           </p>
         </div>
         <div class="txt">
           <p class="code">Full share link: </p>
-          <p class="response relative">
-            <input readonly value="{{ response.result.full_share_link }}" class="w-full ring-1 outline-none p-2">
-            <i (click)="copyText(response.result.full_share_link)"
-              class="fa fa-clone absolute cursor-pointer right-5 top-3" aria-hidden="true"></i>
+          <p class="response ">
+            <input readonly value="{{ response.result.full_share_link }}"
+              class="w-full ring-1 ring-blue-600 outline-none p-2">
           </p>
 
         </div>
         <div class="txt">
           <p class="code">Original link: </p>
-          <p class="response relative">
-            <input readonly value="{{ response.result.original_link }}" class="w-full ring-1 outline-none p-2">
-            <i (click)="copyText(response.result.original_link)"
-              class="fa fa-clone absolute cursor-pointer right-5 top-3" aria-hidden="true"></i>
+          <p class="response ">
+            <input readonly value="{{ response.result.original_link }}"
+              class="w-full ring-1 ring-blue-600 outline-none p-2">
           </p>
 
         </div>
